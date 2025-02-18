@@ -1,10 +1,16 @@
-# buzzline-05-case
+# New Consumer: Kafka_consumer_Mhamed.py
 
-Nearly every streaming analytics system stores processed data somewhere for further analysis, historical reference, or integration with BI tools.
+The newly added consumer focuses on sentiment analysis messages. It consumes JSON messages that are produced by a Kafka producer.
 
-In this example project, we incorporate a relational data store. 
-We use SQLite, but the example could be altered to work with MySQL, PostgreSQL, or MongoDB.
+Specifically, this consumer:
 
+Extracts the sentiment score of each message (a value between -1 and 1).
+Calculates the average sentiment score for each author over time.
+Stores sentiment data in a CSV file for each incoming message.
+Visualizes sentiment data using real-time plotting:
+Average sentiment score by author: A bar chart displaying the average sentiment for each author.
+Sentiment score distribution: A histogram showing the overall sentiment score distribution.
+This consumer processes each message individually, stores its sentiment, and updates the visualizations dynamically.
 ## VS Code Extensions
 
 - Black Formatter by Microsoft
