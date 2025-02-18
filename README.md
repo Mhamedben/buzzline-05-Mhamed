@@ -40,13 +40,26 @@ Start the producer to generate the messages.
 py -m producers.producer_case
 ```
 
-### Run Consumer (Terminal 4) 
+### Run the Consumer (Terminal 4) 
 
 ```shell
 .venv\Scripts\activate
 py -m consumers.kafka_consumer_Mhamed
 
-### Visualization
+***### Run the Consumer (Terminal 4) 
+
+```shell
+.venv\Scripts\activate
+py -m consumers.kafka_consumer_Mhamed
+
+### Run the Consumer (Terminal 4) 
+
+```shell
+.venv\Scripts\activate
+py -m consumers.kafka_consumer_Mhamed
+### Run the Consumer (Terminal 4)
+
+
 The consumer updates two types of visualizations dynamically:
 1. **Average Sentiment Score by Author**: A bar chart displaying the average sentiment score for each author.
 2. **Sentiment Score Distribution**: A histogram displaying the distribution of sentiment scores across all messages.
