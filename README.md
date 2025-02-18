@@ -49,8 +49,8 @@ py -m consumers.kafka_consumer_Mhamed
 
 ### Custom Kafka Consumer
 For each incoming message, the consumer:
- 1. **Extracts sentiment data (sentiment score) and stores: it for the author of the message.
- 2. **Tracks the sentiment of messages over time, visualizing the average sentiment per author and the overall sentiment distribution.
+ 1. Extracts sentiment data (sentiment score) and stores it for the author of the message.
+ 2. Tracks the sentiment of messages over time, visualizing the average sentiment per author and the overall sentiment distribution.
 
 ### Visualization
 The consumer updates two types of visualizations dynamically:
