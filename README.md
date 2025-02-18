@@ -45,8 +45,8 @@ py -m producers.producer_case
 ```shell
 .venv\Scripts\activate
 py -m consumers.kafka_consumer_Mhamed
-
-***### Run the Consumer (Terminal 4) 
+```
+### Run the Consumer (Terminal 4) 
 
 ```shell
 .venv\Scripts\activate
