@@ -12,6 +12,12 @@ The newly added consumer focuses on sentiment analysis messages. It consumes JSO
    - 2-Sentiment score distribution: A histogram showing the overall sentiment score distribution.
      
 This consumer processes each message individually, stores its sentiment, and updates the visualizations dynamically.
+
+## Instructions
+
+### 1. Clone the Repository
+
+Clone this repository to your local machine: git clone https://github.com/drodmay1/buzzline-05-Mhamed
 ## VS Code Extensions
 
 - Black Formatter by Microsoft
