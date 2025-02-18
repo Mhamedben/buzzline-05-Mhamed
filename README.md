@@ -25,9 +25,9 @@ source .venv/bin/activate
 pip install -r requirements.txt`
 ### 4. Start Kafka and Zookeeper:
   - Start Zookeeper
-   -- ./bin/zookeeper-server-start.sh config/zookeeper.properties`
+      - ./bin/zookeeper-server-start.sh config/zookeeper.properties`
   - Start Kafka
-./bin/kafka-server-start.sh config/server.properties`
+      - ./bin/kafka-server-start.sh config/server.properties`
 Create the Kafka Topic:
 ./bin/kafka-topics.sh --create --topic buzzline --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1`
 Custom Kafka Consumer
