@@ -10,6 +10,7 @@ The newly added consumer focuses on sentiment analysis messages. It consumes JSO
  - Visualizes sentiment data using real-time plotting:
    - 1-Average sentiment score by author: A bar chart displaying the average sentiment for each author.
    - 2-Sentiment score distribution: A histogram showing the overall sentiment score distribution.
+     
 This consumer processes each message individually, stores its sentiment, and updates the visualizations dynamically.
 ## VS Code Extensions
 
