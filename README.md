@@ -18,6 +18,55 @@ This consumer processes each message individually, stores its sentiment, and upd
 ### 1. Clone the Repository
 
 Clone this repository to your local machine: git clone https://github.com/drodmay1/buzzline-05-Mhamed
+
+### 2. Create a Virtual Environment:
+source .venv/bin/activate
+### 3. Install Dependencies:
+pip install -r requirements.txt`
+### 4. Start Kafka and Zookeeper:
+  - Start Zookeeper
+   -- ./bin/zookeeper-server-start.sh config/zookeeper.properties`
+  - Start Kafka
+./bin/kafka-server-start.sh config/server.properties`
+Create the Kafka Topic:
+./bin/kafka-topics.sh --create --topic buzzline --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1`
+Custom Kafka Consumer
+The custom Kafka consumer:
+
+Reads messages from the buzzline Kafka topic.
+Processes and enriches data to extract:
+sentiment
+message_length
+keyword_mentioned
+Stores the processed data in an SQLite database (buzz.sqlite).
+Handles errors gracefully and ensures Kafka services and topics are available before consumption.
+Visualization
+The processed data is visualized using matplotlib in the dashboard_visualization.py script. This dashboard includes:
+
+Sentiment score distribution.
+Message length distribution.
+Keyword mentions.
+Sentiment trend over time.
+Running the project
+Run the producer
+python producers/kafka_producer.py
+Run the consumer
+python consumers/kafka_consumer_davidrm.py
+Run the Viualization Dashboard
+python consumers/dashboard_visualization.py
+buzzline-
+
+
+
+
+
+
+
+
+
+
+
+
 ## VS Code Extensions
 
 - Black Formatter by Microsoft
